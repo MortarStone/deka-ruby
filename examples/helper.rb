@@ -10,13 +10,19 @@ require_relative 'helpers/users'
 require 'dotenv'
 Dotenv.load('../.env')
 
-# @client = Deka::Client.new()
+@client = Deka::Client.new(
+  partner_token: ENV['PARTNER_TOKEN'],
+  personal_access_token: ENV['PERSONAL_ACCESS_TOKEN'],
+  organization_uuid: ENV['ORGANIZATION_UUID'],
+  environment: :staging
+)
 
 def print_no_access_message
   puts "Unless something has recently changed, we do not have access to this table or the table does not exist."
 end
 
-def print_list(object_name, pk_id_name, list)
+def print_list(object_name, pk_id_name, response)
+  list = response[:data]
   if list.nil? || list.empty?
     puts 'Nothing found'
   else
@@ -51,7 +57,8 @@ def print_row(index, item, column_headers)
   puts cells.join(" :: ")
 end
 
-def print_item(object_name, item)
+def print_item(object_name, response)
+  item = response[:data]
   puts
   if item.nil?
     puts "Item not found"

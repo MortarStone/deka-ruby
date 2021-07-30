@@ -1,6 +1,7 @@
 require 'faraday'
 require 'json'
 
+require_relative 'exceptions'
 require_relative 'endpoints/families'
 require_relative 'endpoints/organizations'
 require_relative 'endpoints/transactions'

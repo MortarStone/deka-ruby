@@ -13,7 +13,7 @@ module Deka
         request("organizations/#{organization_uuid}/users/#{user_id}/transactions", params: params)
       end
 
-      def user_transaction(id, params = {})
+      def user_transaction(user_id, id, params = {})
         request("organizations/#{organization_uuid}/users/#{user_id}/transactions/#{id}", params: params)
       end
     end
