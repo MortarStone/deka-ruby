@@ -8,7 +8,7 @@ module Deka
     include Deka::Endpoints::Users
 
     attr_accessor :partner_token, :personal_access_token, :organization_uuid,
-      :environment, :default_params
+      :environment
 
     def initialize(partner_token:, personal_access_token:, organization_uuid:,
         environment: :production)
@@ -16,7 +16,6 @@ module Deka
       @personal_access_token = personal_access_token
       @organization_uuid = organization_uuid
       @environment = environment
-      @default_params = { page: 1, per_page: 100 }
     end
 
     def domain
@@ -29,12 +28,17 @@ module Deka
 
     private
 
-    def request(path, params = {})
-      conn = Faraday.new(url, request: { timeout: 300_000 })
-      conn.authorization :Bearer, personal_access_token
+    def connection
+      @connection ||= begin
+        conn = Faraday.new(url, request: { timeout: 300_000 })
+        conn.authorization :Bearer, personal_access_token
+        conn
+      end
+    end
 
-      res = conn.get do |req|
-        req.url "/v1/#{path}"
+    def request(path, params = {})
+      res = connection.get do |req|
+        req.url format_request(path, params)
         req.headers['Content-Type'] = 'application/json'
         req.headers['Accept'] = 'application/json'
         req.headers['X-Api-Partner-Token'] = partner_token
@@ -45,6 +49,20 @@ module Deka
         "#{res.status} #{res.reason_phrase}" unless res.status == 200
 
       JSON.parse(res.body, symbolize_names: true)
+    end
+
+    def format_request(path, params = {})
+      "/v1/#{path}?#{format_get_params(params)}"
+    end
+
+    def format_get_params(params = {})
+      return if params.blank?
+
+      arr = []
+      params.each do |k, v|
+        arr << "#{k}=#{v}"
+      end
+      arr.join('&')
     end
   end
 end
