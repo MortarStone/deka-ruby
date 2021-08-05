@@ -48,7 +48,9 @@ module Deka
       raise Deka::Exceptions::ResponseError,
         "#{res.status} #{res.reason_phrase}" unless res.status == 200
 
-      JSON.parse(res.body, symbolize_names: true)
+      results = JSON.parse(res.body, symbolize_names: true)
+      results[:headers] = res.headers
+      results
     end
 
     def format_request(path, params = {})

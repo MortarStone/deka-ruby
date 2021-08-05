@@ -22,6 +22,8 @@ def print_no_access_message
 end
 
 def print_list(object_name, pk_id_name, response)
+  print_headers(response[:headers])
+
   list = response[:data]
   if list.nil? || list.empty?
     puts 'Nothing found'
@@ -58,6 +60,8 @@ def print_row(index, item, column_headers)
 end
 
 def print_item(object_name, response)
+  print_headers(response[:headers])
+
   item = response[:data]
   puts
   if item.nil?
@@ -81,4 +85,9 @@ def print_duplicates(pk_id_name, list)
 
   duplicates = counts.select { |_key, value| value > 1 }.keys - [nil]
   puts "There are #{duplicates.count} duplicates: #{duplicates.inspect}"
+end
+
+def print_headers(headers)
+  p headers
+  puts
 end
