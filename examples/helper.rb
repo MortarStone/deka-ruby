@@ -4,6 +4,7 @@ require 'bigdecimal'
 require_relative '../lib/deka'
 require_relative 'helpers/families'
 require_relative 'helpers/organizations'
+require_relative 'helpers/purposes'
 require_relative 'helpers/transactions'
 require_relative 'helpers/users'
 

@@ -4,6 +4,7 @@ module Deka
   class Client
     include Deka::Endpoints::Families
     include Deka::Endpoints::Organizations
+    include Deka::Endpoints::Purposes
     include Deka::Endpoints::Transactions
     include Deka::Endpoints::Users
 
