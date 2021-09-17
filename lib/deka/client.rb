@@ -8,19 +8,17 @@ module Deka
     include Deka::Endpoints::Transactions
     include Deka::Endpoints::Users
 
-    attr_accessor :partner_token, :personal_access_token, :organization_uuid,
-      :environment
+    attr_accessor :personal_access_token, :organization_uuid, :environment
 
-    def initialize(partner_token:, personal_access_token:, organization_uuid:,
+    def initialize(personal_access_token:, organization_uuid:,
         environment: :production)
-      @partner_token = partner_token
       @personal_access_token = personal_access_token
       @organization_uuid = organization_uuid
       @environment = environment
     end
 
     def domain
-      @domain ||= environment == :staging ? 'api.staging.thedeka.com' : '?'
+      @domain ||= environment == :staging ? 'api.staging.thedeka.com' : 'api.deka.solutions'
     end
 
     def url
@@ -42,7 +40,6 @@ module Deka
         req.url format_request(path, params)
         req.headers['Content-Type'] = 'application/json'
         req.headers['Accept'] = 'application/json'
-        req.headers['X-Api-Partner-Token'] = partner_token
         req.options.timeout = 300 # 5 minutes
       end
 
