@@ -14,7 +14,7 @@ Dotenv.load('../.env')
 @client = Deka::Client.new(
   personal_access_token: ENV['PERSONAL_ACCESS_TOKEN'],
   organization_uuid: ENV['ORGANIZATION_UUID'],
-  # environment: :staging
+  environment: ENV['ENVIRONMENT']
 )
 
 def print_no_access_message

@@ -10,15 +10,14 @@ module Deka
 
     attr_accessor :personal_access_token, :organization_uuid, :environment
 
-    def initialize(personal_access_token:, organization_uuid:,
-        environment: :production)
+    def initialize(personal_access_token:, organization_uuid:, environment:)
       @personal_access_token = personal_access_token
       @organization_uuid = organization_uuid
-      @environment = environment
+      @environment = environment || 'production'
     end
 
     def domain
-      @domain ||= environment == :staging ? 'api.staging.thedeka.com' : 'api.deka.solutions'
+      @domain ||= environment == 'staging' ? 'api.staging.thedeka.com' : 'api.deka.solutions'
     end
 
     def url
