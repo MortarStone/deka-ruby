@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.staging.thedeka.com/v1/organizations/d6aac94c-5a71-4799-9c28-19fab0c95761/users?page%5Bnumber%5D=1&page%5Bsize%5D=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.5.1
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzNiIsImp0aSI6Ijk1ZWQ3YjBmMWNmZTFhMmU1MTcyNGMwOWM0ZjUwYzNmZDhmNzg4ZWQxNTc1NDA2NTY5MmMzZGZhZGQxYmQzYjg4ZWM2ZWY2MDZjMzlmZTg3IiwiaWF0IjoxNjI4MTIzOTQyLjcyMzM5NCwibmJmIjoxNjI4MTIzOTQyLjcyMzM5OCwiZXhwIjoxNjU5NjU5OTQyLjcxNTY2LCJzdWIiOiIxIiwic2NvcGVzIjpbInZpZXctZmFtaWxpZXMiLCJ2aWV3LW9yZ2FuaXphdGlvbiIsInZpZXctdXNlcnMiLCJ2aWV3LXRyYW5zYWN0aW9ucyIsInZpZXctcHVycG9zZXMiXX0.CUseZZWXHd9BYPztxqNiHIl1ivTyZcB8NGSVgUSpwRe2zCS8PPl9Q8ir9jk-8RghgyYQUGZmXGVjsRGq5s_XxJrbz-yoN4tZ4xIuhxYkSbrzn79ZiYUdYjI9XHqc4ZAGbU6AvQgs9TEQnkyTMf0k-jKzkhJLJIsouRgfYuzNraU82wwgWRjp7LQILcPLducye0t9r5C-cDIUQnX-9kzo7xjoJAx__Ymm2085LwwFpgZpOAXcwMsV8VaxXQqO-Ixqhh3PW9KkPr87ENehQKu_xyS6dIfXQXJfqkvxoi_HL7n6d3Cxbzn-fqnnqCM9QssWxE6MUb7YLctYNDoDxVmQpueBfTYWvw-wYDFB1585s-rMKYGznhu57PqwuhW4yP18JFDvXr5zO7KwWm6LcXVSnmCnSyzadWDbOjH_TDywSPynIfWnp0QBY3NPQ_UKJqY1RadRl-YyE3HXeuquhZ7lZB6qPPU9xKgT0o76q25CrsYeYn2RtTmKJcDX9GAoVYC6D7P3UfRdBQhhTdbIzCXONuNF5Wb6Q7YgsD9z1Ej3g5TSf1xHbuffX4szKRWqSYdbCe-72vWSqmuatT5vps0aojpRrR9Pp3P6y7o1dS8U7fdXUVyfLtlzof5PBU3t6wlkjugbs5-cu8gvQNCxu_qMCkMvHyEXItGKHEluLIKPQrU
+      Content-Type:
+      - application/json
+      Accept:
+      - application/json
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      server:
+      - nginx
+      content-type:
+      - application/json
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      vary:
+      - Accept-Encoding
+      cache-control:
+      - no-cache, private
+      date:
+      - Mon, 20 Sep 2021 18:20:41 GMT
+      x-ratelimit-limit:
+      - '60'
+      x-ratelimit-remaining:
+      - '53'
+      access-control-allow-origin:
+      - "*"
+      x-xss-protection:
+      - 1; mode=block
+      x-content-type-options:
+      - nosniff
+      referrer-policy:
+      - no-referrer-when-downgrade
+      content-security-policy:
+      - 'default-src ''self'' http: https: data: blob: ''unsafe-inline''; frame-ancestors
+        ''self'';'
+      permissions-policy:
+      - interest-cohort=()
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"id":1,"family_id":6,"first_name":"Garrick","last_name":"Crouch","name":"Garrick
+        Crouch","email":"garrick@deka.solutions","address":"102 McCullough Plains\nNorth
+        Kellenville, CA 01993","address2":null,"city":"Ethaborough","state_province":"Iowa","postal":"47756-5325","cell_phone":null,"pco_person_id":null,"reports_to_id":"1","created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-06-30T20:19:39.000000Z","deleted_at":null},{"id":2,"family_id":7,"first_name":"Todd","last_name":"Lear","name":"Todd
+        Lear","email":"todd@deka.solutions","address":"772 Davis Spring\nChamplinhaven,
+        CA 28507","address2":null,"city":"Kemmerfurt","state_province":"North Dakota","postal":"79693","cell_phone":null,"pco_person_id":null,"reports_to_id":null,"created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-07-01T15:49:17.000000Z","deleted_at":null},{"id":3,"family_id":8,"first_name":"Emmanuel","last_name":"Omole","name":"Emmanuel
+        Omole","email":"omostical@gmail.com","address":"6087 Crona Parkway Apt. 046\nLake
+        Alvaville, TN 79357-3032","address2":null,"city":"West Jalenhaven","state_province":"Kansas","postal":"46160","cell_phone":null,"pco_person_id":null,"reports_to_id":"3","created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-09-15T11:30:30.000000Z","deleted_at":null},{"id":4,"family_id":9,"first_name":"Derek","last_name":"Neece","name":"Derek","email":"derek@deka.solutions","address":"8760
+        Ebert Mission\nWest Abagailburgh, CO 74550-5973","address2":null,"city":"Friesenborough","state_province":"Colorado","postal":"57731-9985","cell_phone":null,"pco_person_id":null,"reports_to_id":null,"created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-07-01T15:50:31.000000Z","deleted_at":null},{"id":5,"family_id":10,"first_name":"Javon","last_name":"Hagenes","name":"Javon
+        Hagenes","email":"conor74@example.org","address":"29967 Kris Coves\nPort Antwonburgh,
+        ME 95118-5011","address2":null,"city":"Port Eloybury","state_province":"Michigan","postal":"47289-4182","cell_phone":null,"pco_person_id":null,"reports_to_id":null,"created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-07-01T15:50:13.000000Z","deleted_at":null},{"id":6,"family_id":11,"first_name":"Clara","last_name":"Crooks","name":"Clara
+        Crooks","email":"braden.satterfield@example.com","address":"5193 Kavon Mall\nLake
+        Carolyne, MS 50374","address2":null,"city":"Barrowston","state_province":"Kansas","postal":"92724","cell_phone":null,"pco_person_id":null,"reports_to_id":null,"created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-06-15T14:56:15.000000Z","deleted_at":null},{"id":7,"family_id":12,"first_name":"Gavin","last_name":"Stark","name":"Gavin
+        Stark","email":"hoyt.borer@example.net","address":"76632 Beatty Plaza Suite
+        333\nBogisichmouth, NJ 18945","address2":null,"city":"North Kalemouth","state_province":"West
+        Virginia","postal":"76697-8575","cell_phone":null,"pco_person_id":null,"reports_to_id":null,"created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-06-15T14:56:15.000000Z","deleted_at":null},{"id":8,"family_id":13,"first_name":"Maria","last_name":"O''Connell","name":"Maria
+        O''Connell","email":"denesik.citlalli@example.net","address":"5179 Sydnee
+        Wall Apt. 262\nLake Mattmouth, MT 78754-4797","address2":null,"city":"Port
+        Kurtis","state_province":"Montana","postal":"15607","cell_phone":null,"pco_person_id":null,"reports_to_id":null,"created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-06-15T14:56:15.000000Z","deleted_at":null},{"id":9,"family_id":14,"first_name":"Whitney","last_name":"Crist
+        II","name":"Whitney Crist II","email":"bart11@example.com","address":"5293
+        Murphy Island\nKirlinfort, ME 86655-5717","address2":null,"city":"South Raphael","state_province":"Ohio","postal":"64982","cell_phone":null,"pco_person_id":null,"reports_to_id":null,"created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-06-15T14:56:15.000000Z","deleted_at":null},{"id":10,"family_id":15,"first_name":"Marcelo","last_name":"Jacobi","name":"Marcelo
+        Jacobi","email":"jacey72@example.com","address":"5998 Wolf Well\nEast Christelle,
+        PA 38373-3821","address2":null,"city":"Dangelostad","state_province":"Missouri","postal":"08718-8528","cell_phone":null,"pco_person_id":null,"reports_to_id":null,"created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-06-15T14:56:15.000000Z","deleted_at":null}],"links":{"first":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=1","last":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=6","prev":null,"next":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=2"},"meta":{"current_page":1,"from":1,"last_page":6,"links":[{"url":null,"label":"&laquo;
+        Previous","active":false},{"url":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=1","label":"1","active":true},{"url":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=2","label":"2","active":false},{"url":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=3","label":"3","active":false},{"url":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=4","label":"4","active":false},{"url":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=5","label":"5","active":false},{"url":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=6","label":"6","active":false},{"url":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users?page%5Bsize%5D=10&page%5Bnumber%5D=2","label":"Next
+        &raquo;","active":false}],"path":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/users","per_page":10,"to":10,"total":53}}'
+  recorded_at: Mon, 20 Sep 2021 18:20:41 GMT
+recorded_with: VCR 6.0.0
