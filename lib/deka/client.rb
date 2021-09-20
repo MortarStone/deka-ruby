@@ -42,8 +42,10 @@ module Deka
         req.options.timeout = 300 # 5 minutes
       end
 
-      raise Deka::Exceptions::ResponseError,
-        "#{res.status} #{res.reason_phrase}" unless res.status == 200
+      unless res.status == 200
+        raise Deka::Exceptions::ResponseError,
+              "#{res.status} #{res.reason_phrase}"
+      end
 
       results = JSON.parse(res.body, symbolize_names: true)
       results[:headers] = res.headers

@@ -1,6 +1,7 @@
 module Deka
   module Endpoints
-    module Purposes # funds
+    # funds
+    module Purposes
       def purposes(params = {})
         request(
           "organizations/#{organization_uuid}/purposes",
