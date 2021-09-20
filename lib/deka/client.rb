@@ -10,15 +10,14 @@ module Deka
 
     attr_accessor :personal_access_token, :organization_uuid, :environment
 
-    def initialize(personal_access_token:, organization_uuid:,
-        environment: :production)
+    def initialize(personal_access_token:, organization_uuid:, environment:)
       @personal_access_token = personal_access_token
       @organization_uuid = organization_uuid
-      @environment = environment
+      @environment = environment || 'production'
     end
 
     def domain
-      @domain ||= environment == :staging ? 'api.staging.thedeka.com' : 'api.deka.solutions'
+      @domain ||= environment == 'staging' ? 'api.staging.thedeka.com' : 'api.deka.solutions'
     end
 
     def url
@@ -43,8 +42,10 @@ module Deka
         req.options.timeout = 300 # 5 minutes
       end
 
-      raise Deka::Exceptions::ResponseError,
-        "#{res.status} #{res.reason_phrase}" unless res.status == 200
+      unless res.status == 200
+        raise Deka::Exceptions::ResponseError,
+              "#{res.status} #{res.reason_phrase}"
+      end
 
       results = JSON.parse(res.body, symbolize_names: true)
       results[:headers] = res.headers

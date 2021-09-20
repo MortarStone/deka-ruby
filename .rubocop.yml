@@ -1,0 +1,65 @@
+AllCops:
+  Exclude:
+    - 'bin/*'
+  NewCops: enable
+  TargetRubyVersion: 2.6
+Style/Documentation:
+  Enabled: false
+Layout/LineLength:
+  Enabled: false
+Style/RescueModifier:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 100
+Metrics/ClassLength:
+  Max: 250
+Metrics/ModuleLength:
+  Max: 250
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Layout/ClosingParenthesisIndentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Naming/PredicateName:
+  Exclude:
+    - 'spec/**/*'
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Style/EmptyCaseCondition:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/StringLiterals:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/ConditionalAssignment:
+  Enabled: false
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+Lint/RaiseException:
+  Enabled: true
+Lint/StructNewOverride:
+  Enabled: true
+Style/ExponentialNotation:
+  Enabled: true
+Style/HashEachMethods:
+  Enabled: true
+Style/HashTransformKeys:
+  Enabled: true
+Style/HashTransformValues:
+  Enabled: true
