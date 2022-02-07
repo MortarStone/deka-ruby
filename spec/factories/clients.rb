@@ -7,7 +7,7 @@ FactoryBot.define do
       new(
         organization_uuid: organization_uuid,
         personal_access_token: personal_access_token,
-        environment: 'staging'
+        environment: 'production'
       )
     end
   end
@@ -20,7 +20,7 @@ FactoryBot.define do
       new(
         organization_uuid: organization_uuid,
         personal_access_token: personal_access_token,
-        environment: 'staging'
+        environment: 'production'
       )
     end
   end

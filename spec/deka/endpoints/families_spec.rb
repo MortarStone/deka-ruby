@@ -25,7 +25,7 @@ RSpec.describe Deka::Endpoints::Families do
 
     it 'returns a user_family object' do
       expect(@user_family[:data]).to be_a(Hash)
-      expect(@user_family[:data][:id]).to eq(6)
+      expect(@user_family[:data][:id]).to eq(1)
     end
   end
 end

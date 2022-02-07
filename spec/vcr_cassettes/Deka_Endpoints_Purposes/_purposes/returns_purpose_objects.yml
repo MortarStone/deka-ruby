@@ -2,61 +2,60 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.staging.thedeka.com/v1/organizations/d6aac94c-5a71-4799-9c28-19fab0c95761/purposes?page%5Bnumber%5D=1&page%5Bsize%5D=10
+    uri: https://api.deka.solutions/v1/organizations/8b81ae23-15e7-443c-8293-b0d258e5fe2c/purposes?page%5Bnumber%5D=1&page%5Bsize%5D=10
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.5.1
-      Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzNiIsImp0aSI6Ijk1ZWQ3YjBmMWNmZTFhMmU1MTcyNGMwOWM0ZjUwYzNmZDhmNzg4ZWQxNTc1NDA2NTY5MmMzZGZhZGQxYmQzYjg4ZWM2ZWY2MDZjMzlmZTg3IiwiaWF0IjoxNjI4MTIzOTQyLjcyMzM5NCwibmJmIjoxNjI4MTIzOTQyLjcyMzM5OCwiZXhwIjoxNjU5NjU5OTQyLjcxNTY2LCJzdWIiOiIxIiwic2NvcGVzIjpbInZpZXctZmFtaWxpZXMiLCJ2aWV3LW9yZ2FuaXphdGlvbiIsInZpZXctdXNlcnMiLCJ2aWV3LXRyYW5zYWN0aW9ucyIsInZpZXctcHVycG9zZXMiXX0.CUseZZWXHd9BYPztxqNiHIl1ivTyZcB8NGSVgUSpwRe2zCS8PPl9Q8ir9jk-8RghgyYQUGZmXGVjsRGq5s_XxJrbz-yoN4tZ4xIuhxYkSbrzn79ZiYUdYjI9XHqc4ZAGbU6AvQgs9TEQnkyTMf0k-jKzkhJLJIsouRgfYuzNraU82wwgWRjp7LQILcPLducye0t9r5C-cDIUQnX-9kzo7xjoJAx__Ymm2085LwwFpgZpOAXcwMsV8VaxXQqO-Ixqhh3PW9KkPr87ENehQKu_xyS6dIfXQXJfqkvxoi_HL7n6d3Cxbzn-fqnnqCM9QssWxE6MUb7YLctYNDoDxVmQpueBfTYWvw-wYDFB1585s-rMKYGznhu57PqwuhW4yP18JFDvXr5zO7KwWm6LcXVSnmCnSyzadWDbOjH_TDywSPynIfWnp0QBY3NPQ_UKJqY1RadRl-YyE3HXeuquhZ7lZB6qPPU9xKgT0o76q25CrsYeYn2RtTmKJcDX9GAoVYC6D7P3UfRdBQhhTdbIzCXONuNF5Wb6Q7YgsD9z1Ej3g5TSf1xHbuffX4szKRWqSYdbCe-72vWSqmuatT5vps0aojpRrR9Pp3P6y7o1dS8U7fdXUVyfLtlzof5PBU3t6wlkjugbs5-cu8gvQNCxu_qMCkMvHyEXItGKHEluLIKPQrU
+      - Faraday v2.2.0
       Content-Type:
       - application/json
       Accept:
       - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTA1YzgxNmIyYTg4NWY0Yjg3YTNjNGU1MTQ2Yzc0NjUxNzRhNTZhMGQyYTc5YWMzZDQ0YmM2OTI1MjA4ZmJkNjBhYTA3ZDE2MTZkMzAxOWYiLCJpYXQiOjE2MzI3NjQxMTcuMTg5MjEyLCJuYmYiOjE2MzI3NjQxMTcuMTg5MjE3LCJleHAiOjE2NjQzMDAxMTcuMTAwNTI3LCJzdWIiOiIxIiwic2NvcGVzIjpbInZpZXctZmFtaWxpZXMiLCJ2aWV3LW9yZ2FuaXphdGlvbiIsInZpZXctdXNlcnMiLCJ2aWV3LXRyYW5zYWN0aW9ucyIsInZpZXctcHVycG9zZXMiXX0.N6JHCaOlFfwk0dyWgBl4oe76cMlZXBXYEJPCo3idIgbeZVppfw58JfLxF1vbn-9_B8s_YJKezMg4hMn6MAnC8mPWb3qkTzXaW0fiZ9BOTEiU6K3MV3I6iZrlNzHJS2mln5LnzWBnep4IAOOlL7atr9lEURszfhjlImIiL0N7UWIttSR9bEChns-gsv-aypV5r3oxsyrNoVbFc1_vrXX5QaCHW0R-0V2u_ZZUY5eqJyDuCjOLG4Lribo1n2YjHJa8QUFS0-hmqebW4mnCC2qu_znbICcFTsmu1g_jmdYHDwIStCnRIpCi1zawoYSYcfYVv7HK45VcIaKUTz5dx84tLXvb570xArLw3LfH5vTby8JRr6kReofJqY_MK4Gal7OrZVqcTKT2LS4F0xhZFBCDbmkjx3bryniBJl_80H6KvvUSbRWrV4RiqG0BfsFvbV4UDyS0zVIevbXXcej-B2Dzt24Em8yxdLVSXFthB8X0pVwSj6Uh96XbFfZVUIZrR2ncyXktm4J5IOAyNIY_o-8FKfbb_HI6X4zqQUBDWxP2AjQ8tOEG_EhHK5N0fxXIdEtuek8uxCaXgv6lvFaBJzIidqRvQugVpJSVIFuOCL6EtARNsa8Gf3I80NnZK7NpV8Aj2cl-4aO2Z7BhW-id6tz2RffIxoXXM387C8QF7BmygUM
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
-      - nginx
+      date:
+      - Mon, 07 Feb 2022 20:47:07 GMT
       content-type:
       - application/json
       transfer-encoding:
       - chunked
       connection:
       - keep-alive
-      vary:
-      - Accept-Encoding
+      server:
+      - nginx/1.20.0
       cache-control:
       - no-cache, private
-      date:
-      - Mon, 20 Sep 2021 18:20:41 GMT
       x-ratelimit-limit:
       - '60'
       x-ratelimit-remaining:
-      - '57'
-      access-control-allow-origin:
-      - "*"
+      - '59'
+      vary:
+      - Origin
+      x-frame-options:
+      - SAMEORIGIN
       x-xss-protection:
       - 1; mode=block
       x-content-type-options:
       - nosniff
-      referrer-policy:
-      - no-referrer-when-downgrade
-      content-security-policy:
-      - 'default-src ''self'' http: https: data: blob: ''unsafe-inline''; frame-ancestors
-        ''self'';'
-      permissions-policy:
-      - interest-cohort=()
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
     body:
-      encoding: ASCII-8BIT
-      string: '{"data":[{"id":1,"name":"general","gl_code":"9999999","organization_id":"1","active":"1","deductible":"yes","hide":"0","no_recurring":null,"sms_default":null,"deleted_at":null,"created_at":"2021-06-07T13:32:48.000000Z","updated_at":"2021-06-07T13:32:48.000000Z","order":null,"pco_fund_id":null}],"links":{"first":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/purposes?page%5Bsize%5D=10&page%5Bnumber%5D=1","last":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/purposes?page%5Bsize%5D=10&page%5Bnumber%5D=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo;
-        Previous","active":false},{"url":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/purposes?page%5Bsize%5D=10&page%5Bnumber%5D=1","label":"1","active":true},{"url":null,"label":"Next
-        &raquo;","active":false}],"path":"https:\/\/api.staging.thedeka.com\/v1\/organizations\/d6aac94c-5a71-4799-9c28-19fab0c95761\/purposes","per_page":10,"to":1,"total":1}}'
-  recorded_at: Mon, 20 Sep 2021 18:20:41 GMT
+      encoding: UTF-8
+      string: '{"data":[{"id":4,"name":"General Contribution","gl_code":"","organization_id":129,"active":1,"deleted_at":null,"created_at":"2017-08-01T20:06:53.000000Z","updated_at":"2021-05-25T21:36:00.000000Z","deductible":"yes","hide":0,"no_recurring":null,"sms_default":1,"order":0,"pco_fund_id":null},{"id":5,"name":"Fund
+        Reinvestment","gl_code":"","organization_id":129,"active":1,"deleted_at":null,"created_at":"2017-08-01T20:07:32.000000Z","updated_at":"2021-05-25T21:36:00.000000Z","deductible":"no","hide":0,"no_recurring":null,"sms_default":null,"order":1,"pco_fund_id":null},{"id":9,"name":"Disaster
+        Relief","gl_code":"","organization_id":129,"active":1,"deleted_at":null,"created_at":"2018-02-02T19:27:32.000000Z","updated_at":"2021-05-25T21:36:00.000000Z","deductible":"yes","hide":0,"no_recurring":null,"sms_default":null,"order":2,"pco_fund_id":null},{"id":10,"name":"Andrew
+        Stoecklein Family Support","gl_code":"","organization_id":129,"active":1,"deleted_at":null,"created_at":"2018-08-28T14:33:56.000000Z","updated_at":"2021-05-25T21:36:00.000000Z","deductible":"yes","hide":1,"no_recurring":null,"sms_default":null,"order":3,"pco_fund_id":null},{"id":11,"name":"Seeds
+        Offering","gl_code":"","organization_id":129,"active":1,"deleted_at":null,"created_at":"2019-04-08T22:12:27.000000Z","updated_at":"2021-05-25T21:36:00.000000Z","deductible":"yes","hide":1,"no_recurring":null,"sms_default":null,"order":4,"pco_fund_id":null},{"id":12,"name":"Covid-19
+        Relief","gl_code":"","organization_id":129,"active":1,"deleted_at":null,"created_at":"2020-03-18T20:59:27.000000Z","updated_at":"2021-05-25T21:36:00.000000Z","deductible":"yes","hide":1,"no_recurring":null,"sms_default":null,"order":null,"pco_fund_id":null},{"id":13,"name":"Christmas
+        Blessings List","gl_code":null,"organization_id":129,"active":1,"deleted_at":null,"created_at":"2020-12-16T20:49:39.000000Z","updated_at":"2021-05-25T21:36:00.000000Z","deductible":"yes","hide":1,"no_recurring":null,"sms_default":null,"order":null,"pco_fund_id":null},{"id":14,"name":"Pastoral
+        Counseling","gl_code":null,"organization_id":129,"active":1,"deleted_at":null,"created_at":"2021-03-22T15:40:43.000000Z","updated_at":"2021-05-25T21:36:00.000000Z","deductible":"yes","hide":1,"no_recurring":null,"sms_default":null,"order":null,"pco_fund_id":null},{"id":16,"name":"LIIV
+        Atlanta","gl_code":null,"organization_id":129,"active":1,"deleted_at":null,"created_at":"2021-08-25T16:51:39.000000Z","updated_at":"2021-08-25T16:51:39.000000Z","deductible":"yes","hide":1,"no_recurring":null,"sms_default":null,"order":null,"pco_fund_id":null}],"links":{"first":"http:\/\/api.deka.solutions\/v1\/organizations\/8b81ae23-15e7-443c-8293-b0d258e5fe2c\/purposes?page%5Bsize%5D=10&page%5Bnumber%5D=1","last":"http:\/\/api.deka.solutions\/v1\/organizations\/8b81ae23-15e7-443c-8293-b0d258e5fe2c\/purposes?page%5Bsize%5D=10&page%5Bnumber%5D=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo;
+        Previous","active":false},{"url":"http:\/\/api.deka.solutions\/v1\/organizations\/8b81ae23-15e7-443c-8293-b0d258e5fe2c\/purposes?page%5Bsize%5D=10&page%5Bnumber%5D=1","label":"1","active":true},{"url":null,"label":"Next
+        &raquo;","active":false}],"path":"http:\/\/api.deka.solutions\/v1\/organizations\/8b81ae23-15e7-443c-8293-b0d258e5fe2c\/purposes","per_page":10,"to":9,"total":9}}'
+  recorded_at: Mon, 07 Feb 2022 20:47:07 GMT
 recorded_with: VCR 6.0.0
