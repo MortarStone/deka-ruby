@@ -2,7 +2,7 @@ AllCops:
   Exclude:
     - 'bin/*'
   NewCops: enable
-  TargetRubyVersion: 2.6
+  TargetRubyVersion: 3.0
 Style/Documentation:
   Enabled: false
 Layout/LineLength:

@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Deka::VERSION
   spec.authors       = ["Deb Kallina"]
   spec.email         = ["deb@mortarstone.com"]
-  spec.required_ruby_version = '>= 2.6.5'
+  spec.required_ruby_version = '>= 3.0.0'
 
   spec.summary       = "An API wrapper for Deka written in Ruby."
   spec.homepage      = "https://github.com/MortarStone/deka-ruby"
@@ -42,5 +42,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'activesupport'
   spec.add_dependency 'dotenv'
   spec.add_dependency 'faraday'
+  spec.metadata['rubygems_mfa_required'] = 'true'
 end
 # rubocop:enable Metrics/BlockLength
