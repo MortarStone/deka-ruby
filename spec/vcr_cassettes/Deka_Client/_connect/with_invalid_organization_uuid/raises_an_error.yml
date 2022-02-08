@@ -2,56 +2,41 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.staging.thedeka.com/v1/organizations/aklsdjf/users?page%5Bnumber%5D=1&page%5Bsize%5D=100
+    uri: https://api.deka.solutions/v1/organizations/aklsdjf/users?page%5Bnumber%5D=1&page%5Bsize%5D=100
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.5.1
-      Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzNiIsImp0aSI6Ijk1ZWQ3YjBmMWNmZTFhMmU1MTcyNGMwOWM0ZjUwYzNmZDhmNzg4ZWQxNTc1NDA2NTY5MmMzZGZhZGQxYmQzYjg4ZWM2ZWY2MDZjMzlmZTg3IiwiaWF0IjoxNjI4MTIzOTQyLjcyMzM5NCwibmJmIjoxNjI4MTIzOTQyLjcyMzM5OCwiZXhwIjoxNjU5NjU5OTQyLjcxNTY2LCJzdWIiOiIxIiwic2NvcGVzIjpbInZpZXctZmFtaWxpZXMiLCJ2aWV3LW9yZ2FuaXphdGlvbiIsInZpZXctdXNlcnMiLCJ2aWV3LXRyYW5zYWN0aW9ucyIsInZpZXctcHVycG9zZXMiXX0.CUseZZWXHd9BYPztxqNiHIl1ivTyZcB8NGSVgUSpwRe2zCS8PPl9Q8ir9jk-8RghgyYQUGZmXGVjsRGq5s_XxJrbz-yoN4tZ4xIuhxYkSbrzn79ZiYUdYjI9XHqc4ZAGbU6AvQgs9TEQnkyTMf0k-jKzkhJLJIsouRgfYuzNraU82wwgWRjp7LQILcPLducye0t9r5C-cDIUQnX-9kzo7xjoJAx__Ymm2085LwwFpgZpOAXcwMsV8VaxXQqO-Ixqhh3PW9KkPr87ENehQKu_xyS6dIfXQXJfqkvxoi_HL7n6d3Cxbzn-fqnnqCM9QssWxE6MUb7YLctYNDoDxVmQpueBfTYWvw-wYDFB1585s-rMKYGznhu57PqwuhW4yP18JFDvXr5zO7KwWm6LcXVSnmCnSyzadWDbOjH_TDywSPynIfWnp0QBY3NPQ_UKJqY1RadRl-YyE3HXeuquhZ7lZB6qPPU9xKgT0o76q25CrsYeYn2RtTmKJcDX9GAoVYC6D7P3UfRdBQhhTdbIzCXONuNF5Wb6Q7YgsD9z1Ej3g5TSf1xHbuffX4szKRWqSYdbCe-72vWSqmuatT5vps0aojpRrR9Pp3P6y7o1dS8U7fdXUVyfLtlzof5PBU3t6wlkjugbs5-cu8gvQNCxu_qMCkMvHyEXItGKHEluLIKPQrU
+      - Faraday v2.2.0
       Content-Type:
       - application/json
       Accept:
       - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTA1YzgxNmIyYTg4NWY0Yjg3YTNjNGU1MTQ2Yzc0NjUxNzRhNTZhMGQyYTc5YWMzZDQ0YmM2OTI1MjA4ZmJkNjBhYTA3ZDE2MTZkMzAxOWYiLCJpYXQiOjE2MzI3NjQxMTcuMTg5MjEyLCJuYmYiOjE2MzI3NjQxMTcuMTg5MjE3LCJleHAiOjE2NjQzMDAxMTcuMTAwNTI3LCJzdWIiOiIxIiwic2NvcGVzIjpbInZpZXctZmFtaWxpZXMiLCJ2aWV3LW9yZ2FuaXphdGlvbiIsInZpZXctdXNlcnMiLCJ2aWV3LXRyYW5zYWN0aW9ucyIsInZpZXctcHVycG9zZXMiXX0.N6JHCaOlFfwk0dyWgBl4oe76cMlZXBXYEJPCo3idIgbeZVppfw58JfLxF1vbn-9_B8s_YJKezMg4hMn6MAnC8mPWb3qkTzXaW0fiZ9BOTEiU6K3MV3I6iZrlNzHJS2mln5LnzWBnep4IAOOlL7atr9lEURszfhjlImIiL0N7UWIttSR9bEChns-gsv-aypV5r3oxsyrNoVbFc1_vrXX5QaCHW0R-0V2u_ZZUY5eqJyDuCjOLG4Lribo1n2YjHJa8QUFS0-hmqebW4mnCC2qu_znbICcFTsmu1g_jmdYHDwIStCnRIpCi1zawoYSYcfYVv7HK45VcIaKUTz5dx84tLXvb570xArLw3LfH5vTby8JRr6kReofJqY_MK4Gal7OrZVqcTKT2LS4F0xhZFBCDbmkjx3bryniBJl_80H6KvvUSbRWrV4RiqG0BfsFvbV4UDyS0zVIevbXXcej-B2Dzt24Em8yxdLVSXFthB8X0pVwSj6Uh96XbFfZVUIZrR2ncyXktm4J5IOAyNIY_o-8FKfbb_HI6X4zqQUBDWxP2AjQ8tOEG_EhHK5N0fxXIdEtuek8uxCaXgv6lvFaBJzIidqRvQugVpJSVIFuOCL6EtARNsa8Gf3I80NnZK7NpV8Aj2cl-4aO2Z7BhW-id6tz2RffIxoXXM387C8QF7BmygUM
   response:
     status:
       code: 404
       message: Not Found
     headers:
-      server:
-      - nginx
+      date:
+      - Mon, 07 Feb 2022 20:47:06 GMT
       content-type:
       - application/json
       transfer-encoding:
       - chunked
       connection:
       - keep-alive
-      vary:
-      - Accept-Encoding
+      server:
+      - nginx/1.20.0
       cache-control:
       - no-cache, private
-      date:
-      - Mon, 20 Sep 2021 18:21:52 GMT
-      access-control-allow-origin:
-      - "*"
-      x-xss-protection:
-      - 1; mode=block
-      x-content-type-options:
-      - nosniff
-      referrer-policy:
-      - no-referrer-when-downgrade
-      content-security-policy:
-      - 'default-src ''self'' http: https: data: blob: ''unsafe-inline''; frame-ancestors
-        ''self'';'
-      permissions-policy:
-      - interest-cohort=()
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
+      vary:
+      - Origin
     body:
-      encoding: ASCII-8BIT
+      encoding: UTF-8
       string: '{"errors":[{"status":"404","title":"Not Found","detail":"The requested
         resource was not found at this location.","meta":null}]}'
-  recorded_at: Mon, 20 Sep 2021 18:21:52 GMT
+  recorded_at: Mon, 07 Feb 2022 20:47:06 GMT
 recorded_with: VCR 6.0.0

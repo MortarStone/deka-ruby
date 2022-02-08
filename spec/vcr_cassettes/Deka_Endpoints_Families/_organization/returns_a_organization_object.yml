@@ -2,61 +2,51 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.staging.thedeka.com/v1/organizations/d6aac94c-5a71-4799-9c28-19fab0c95761
+    uri: https://api.deka.solutions/v1/organizations/8b81ae23-15e7-443c-8293-b0d258e5fe2c
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v1.5.1
-      Authorization:
-      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzNiIsImp0aSI6Ijk1ZWQ3YjBmMWNmZTFhMmU1MTcyNGMwOWM0ZjUwYzNmZDhmNzg4ZWQxNTc1NDA2NTY5MmMzZGZhZGQxYmQzYjg4ZWM2ZWY2MDZjMzlmZTg3IiwiaWF0IjoxNjI4MTIzOTQyLjcyMzM5NCwibmJmIjoxNjI4MTIzOTQyLjcyMzM5OCwiZXhwIjoxNjU5NjU5OTQyLjcxNTY2LCJzdWIiOiIxIiwic2NvcGVzIjpbInZpZXctZmFtaWxpZXMiLCJ2aWV3LW9yZ2FuaXphdGlvbiIsInZpZXctdXNlcnMiLCJ2aWV3LXRyYW5zYWN0aW9ucyIsInZpZXctcHVycG9zZXMiXX0.CUseZZWXHd9BYPztxqNiHIl1ivTyZcB8NGSVgUSpwRe2zCS8PPl9Q8ir9jk-8RghgyYQUGZmXGVjsRGq5s_XxJrbz-yoN4tZ4xIuhxYkSbrzn79ZiYUdYjI9XHqc4ZAGbU6AvQgs9TEQnkyTMf0k-jKzkhJLJIsouRgfYuzNraU82wwgWRjp7LQILcPLducye0t9r5C-cDIUQnX-9kzo7xjoJAx__Ymm2085LwwFpgZpOAXcwMsV8VaxXQqO-Ixqhh3PW9KkPr87ENehQKu_xyS6dIfXQXJfqkvxoi_HL7n6d3Cxbzn-fqnnqCM9QssWxE6MUb7YLctYNDoDxVmQpueBfTYWvw-wYDFB1585s-rMKYGznhu57PqwuhW4yP18JFDvXr5zO7KwWm6LcXVSnmCnSyzadWDbOjH_TDywSPynIfWnp0QBY3NPQ_UKJqY1RadRl-YyE3HXeuquhZ7lZB6qPPU9xKgT0o76q25CrsYeYn2RtTmKJcDX9GAoVYC6D7P3UfRdBQhhTdbIzCXONuNF5Wb6Q7YgsD9z1Ej3g5TSf1xHbuffX4szKRWqSYdbCe-72vWSqmuatT5vps0aojpRrR9Pp3P6y7o1dS8U7fdXUVyfLtlzof5PBU3t6wlkjugbs5-cu8gvQNCxu_qMCkMvHyEXItGKHEluLIKPQrU
+      - Faraday v2.2.0
       Content-Type:
       - application/json
       Accept:
       - application/json
+      Authorization:
+      - Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTA1YzgxNmIyYTg4NWY0Yjg3YTNjNGU1MTQ2Yzc0NjUxNzRhNTZhMGQyYTc5YWMzZDQ0YmM2OTI1MjA4ZmJkNjBhYTA3ZDE2MTZkMzAxOWYiLCJpYXQiOjE2MzI3NjQxMTcuMTg5MjEyLCJuYmYiOjE2MzI3NjQxMTcuMTg5MjE3LCJleHAiOjE2NjQzMDAxMTcuMTAwNTI3LCJzdWIiOiIxIiwic2NvcGVzIjpbInZpZXctZmFtaWxpZXMiLCJ2aWV3LW9yZ2FuaXphdGlvbiIsInZpZXctdXNlcnMiLCJ2aWV3LXRyYW5zYWN0aW9ucyIsInZpZXctcHVycG9zZXMiXX0.N6JHCaOlFfwk0dyWgBl4oe76cMlZXBXYEJPCo3idIgbeZVppfw58JfLxF1vbn-9_B8s_YJKezMg4hMn6MAnC8mPWb3qkTzXaW0fiZ9BOTEiU6K3MV3I6iZrlNzHJS2mln5LnzWBnep4IAOOlL7atr9lEURszfhjlImIiL0N7UWIttSR9bEChns-gsv-aypV5r3oxsyrNoVbFc1_vrXX5QaCHW0R-0V2u_ZZUY5eqJyDuCjOLG4Lribo1n2YjHJa8QUFS0-hmqebW4mnCC2qu_znbICcFTsmu1g_jmdYHDwIStCnRIpCi1zawoYSYcfYVv7HK45VcIaKUTz5dx84tLXvb570xArLw3LfH5vTby8JRr6kReofJqY_MK4Gal7OrZVqcTKT2LS4F0xhZFBCDbmkjx3bryniBJl_80H6KvvUSbRWrV4RiqG0BfsFvbV4UDyS0zVIevbXXcej-B2Dzt24Em8yxdLVSXFthB8X0pVwSj6Uh96XbFfZVUIZrR2ncyXktm4J5IOAyNIY_o-8FKfbb_HI6X4zqQUBDWxP2AjQ8tOEG_EhHK5N0fxXIdEtuek8uxCaXgv6lvFaBJzIidqRvQugVpJSVIFuOCL6EtARNsa8Gf3I80NnZK7NpV8Aj2cl-4aO2Z7BhW-id6tz2RffIxoXXM387C8QF7BmygUM
   response:
     status:
       code: 200
       message: OK
     headers:
-      server:
-      - nginx
+      date:
+      - Mon, 07 Feb 2022 20:47:07 GMT
       content-type:
       - application/json
       transfer-encoding:
       - chunked
       connection:
       - keep-alive
-      vary:
-      - Accept-Encoding
+      server:
+      - nginx/1.20.0
       cache-control:
       - no-cache, private
-      date:
-      - Mon, 20 Sep 2021 18:20:40 GMT
       x-ratelimit-limit:
       - '60'
       x-ratelimit-remaining:
-      - '59'
-      access-control-allow-origin:
-      - "*"
+      - '56'
+      vary:
+      - Origin
+      x-frame-options:
+      - SAMEORIGIN
       x-xss-protection:
       - 1; mode=block
       x-content-type-options:
       - nosniff
-      referrer-policy:
-      - no-referrer-when-downgrade
-      content-security-policy:
-      - 'default-src ''self'' http: https: data: blob: ''unsafe-inline''; frame-ancestors
-        ''self'';'
-      permissions-policy:
-      - interest-cohort=()
-      strict-transport-security:
-      - max-age=31536000; includeSubDomains
     body:
-      encoding: ASCII-8BIT
-      string: '{"data":{"id":1,"uuid":"d6aac94c-5a71-4799-9c28-19fab0c95761","org_name":"Test
-        Organization","email":"asdf@asdf.com","slug":"tester","phone":"9999999999","mobile":"9999999999","address":"1234
-        Smart Street","city":"Birmingham","state_province":"AL","postal":"999999","created_at":null,"updated_at":"2021-07-15T14:18:57.000000Z"}}'
-  recorded_at: Mon, 20 Sep 2021 18:20:40 GMT
+      encoding: UTF-8
+      string: '{"data":{"id":129,"uuid":"8b81ae23-15e7-443c-8293-b0d258e5fe2c","org_name":"ARC","email":"finances@arcchurches.com","slug":"arc","phone":"(205)
+        981-4566","mobile":"(423) 584-0945","address":"1201 Lee Branch Lane","city":"Birmingham","state_province":"AL","postal":"35242","created_at":"2018-09-21T03:15:41.000000Z","updated_at":"2021-12-21T15:00:40.000000Z"}}'
+  recorded_at: Mon, 07 Feb 2022 20:47:07 GMT
 recorded_with: VCR 6.0.0

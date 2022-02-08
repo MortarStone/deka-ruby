@@ -27,10 +27,8 @@ module Deka
     private
 
     def connection
-      @connection ||= begin
-        conn = Faraday.new(url, request: { timeout: 300_000 })
-        conn.authorization :Bearer, personal_access_token
-        conn
+      @connection ||= Faraday.new(url, request: { timeout: 300_000 }) do |conn|
+        conn.request :authorization, 'Bearer', personal_access_token
       end
     end
 
