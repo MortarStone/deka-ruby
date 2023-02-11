@@ -1,0 +1,32 @@
+env:
+  ORGANIZATION_UUID: ${{ secrets.ORGANIZATION_UUID }}
+  PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+  ENVIRONMENT: ${{ secrets.ENVIRONMENT }}
+
+name: CI Build
+on: push
+jobs:
+  rubocop:
+    name: Run Rubocop
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Check styles
+        run: bundle exec rubocop
+  rspec:
+    name: Run RSpec
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Run specs
+        env:
+          ENVIRONMENT: ${{ env.ENVIRONMENT }}
+          ORGANIZATION_UUID: ${{ env.ORGANIZATION_UUID }}
+          PERSONAL_ACCESS_TOKEN: ${{ env.PERSONAL_ACCESS_TOKEN }}
+        run: bundle exec rspec spec
