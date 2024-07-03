@@ -50,9 +50,8 @@ module Deka
     def format_get_params(params = {})
       return if params.empty?
 
-      arr = []
-      params.each do |k, v|
-        arr << "#{k}=#{v}"
+      arr = params.map do |k, v|
+        "#{k}=#{v}"
       end
       arr.join('&')
     end

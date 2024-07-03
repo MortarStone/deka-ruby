@@ -2,7 +2,7 @@ require "spec_helper"
 
 RSpec.describe Deka::Endpoints::Families do
   describe '#organization', :vcr do
-    let(:organization_uuid) { ENV['ORGANIZATION_UUID'] }
+    let(:organization_uuid) { ENV.fetch('ORGANIZATION_UUID', nil) }
 
     before do
       @client = FactoryBot.build(:client)
