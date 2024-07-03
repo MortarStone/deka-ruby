@@ -1,17 +1,17 @@
 example_id                                         | status | run_time        |
 -------------------------------------------------- | ------ | --------------- |
-./spec/deka/client_spec.rb[1:1:1:1]                | passed | 0.00168 seconds |
-./spec/deka/client_spec.rb[1:1:2:1]                | passed | 0.00481 seconds |
-./spec/deka/endpoints/families_spec.rb[1:1:1]      | passed | 0.00204 seconds |
-./spec/deka/endpoints/families_spec.rb[1:1:2]      | passed | 0.0032 seconds  |
-./spec/deka/endpoints/families_spec.rb[1:2:1]      | passed | 0.00226 seconds |
-./spec/deka/endpoints/organizations_spec.rb[1:1:1] | passed | 0.00175 seconds |
-./spec/deka/endpoints/purposes_spec.rb[1:1:1]      | passed | 0.00204 seconds |
-./spec/deka/endpoints/purposes_spec.rb[1:1:2]      | passed | 0.0018 seconds  |
-./spec/deka/endpoints/transactions_spec.rb[1:1:1]  | passed | 0.00204 seconds |
-./spec/deka/endpoints/transactions_spec.rb[1:1:2]  | passed | 0.00262 seconds |
-./spec/deka/endpoints/transactions_spec.rb[1:2:1]  | passed | 0.00206 seconds |
-./spec/deka/endpoints/users_spec.rb[1:1:1]         | passed | 0.00269 seconds |
-./spec/deka/endpoints/users_spec.rb[1:1:2]         | passed | 0.00471 seconds |
-./spec/deka/endpoints/users_spec.rb[1:2:1]         | passed | 0.00218 seconds |
-./spec/deka_spec.rb[1:1]                           | passed | 0.00083 seconds |
+./spec/deka/client_spec.rb[1:1:1:1]                | passed | 0.00242 seconds |
+./spec/deka/client_spec.rb[1:1:2:1]                | passed | 0.23839 seconds |
+./spec/deka/endpoints/families_spec.rb[1:1:1]      | passed | 0.24978 seconds |
+./spec/deka/endpoints/families_spec.rb[1:1:2]      | passed | 0.22075 seconds |
+./spec/deka/endpoints/families_spec.rb[1:2:1]      | passed | 0.24196 seconds |
+./spec/deka/endpoints/organizations_spec.rb[1:1:1] | passed | 0.26343 seconds |
+./spec/deka/endpoints/purposes_spec.rb[1:1:1]      | passed | 0.22289 seconds |
+./spec/deka/endpoints/purposes_spec.rb[1:1:2]      | passed | 0.21893 seconds |
+./spec/deka/endpoints/transactions_spec.rb[1:1:1]  | passed | 0.26693 seconds |
+./spec/deka/endpoints/transactions_spec.rb[1:1:2]  | passed | 0.31352 seconds |
+./spec/deka/endpoints/transactions_spec.rb[1:2:1]  | passed | 0.24392 seconds |
+./spec/deka/endpoints/users_spec.rb[1:1:1]         | passed | 0.2215 seconds  |
+./spec/deka/endpoints/users_spec.rb[1:1:2]         | passed | 0.2559 seconds  |
+./spec/deka/endpoints/users_spec.rb[1:2:1]         | passed | 0.25194 seconds |
+./spec/deka_spec.rb[1:1]                           | passed | 0.00128 seconds |

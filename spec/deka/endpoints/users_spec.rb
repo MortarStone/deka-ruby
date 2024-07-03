@@ -20,12 +20,12 @@ RSpec.describe Deka::Endpoints::Users do
   describe '#user', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @user = @client.user(1)
+      @user = @client.user(1520)
     end
 
     it 'returns a user object' do
       expect(@user[:data]).to be_a(Hash)
-      expect(@user[:data][:id]).to eq(1)
+      expect(@user[:data][:id]).to eq(1520)
     end
   end
 end

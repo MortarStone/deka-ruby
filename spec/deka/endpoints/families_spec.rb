@@ -20,12 +20,12 @@ RSpec.describe Deka::Endpoints::Families do
   describe '#user_family', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @user_family = @client.user_family(1)
+      @user_family = @client.user_family(613)
     end
 
     it 'returns a user_family object' do
       expect(@user_family[:data]).to be_a(Hash)
-      expect(@user_family[:data][:id]).to eq(1)
+      expect(@user_family[:data][:id]).to eq(610)
     end
   end
 end
