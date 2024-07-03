@@ -3,13 +3,28 @@ module Deka
     class DStandardError < StandardError
     end
 
-    class InvalidInputError < DStandardError
+    class UnableToConnectError < DStandardError
     end
 
-    class ConnectionError < DStandardError
+    class UnknownConnectingError < DStandardError
+    end
+
+    class BadCredentialsError < DStandardError
+    end
+
+    class MissingPermissionsError < DStandardError
+    end
+
+    class TooManyRequestsError < DStandardError
+    end
+
+    class ApiRateLimitError < DStandardError
     end
 
     class ResponseError < DStandardError
+    end
+
+    class NotFoundError < DStandardError
     end
   end
 end

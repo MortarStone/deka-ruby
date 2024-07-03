@@ -20,12 +20,12 @@ RSpec.describe Deka::Endpoints::Transactions do
   describe '#transaction', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @transaction = @client.transaction(1)
+      @transaction = @client.transaction(13_168)
     end
 
     it 'returns a transaction object' do
       expect(@transaction[:data]).to be_a(Hash)
-      expect(@transaction[:data][:id]).to eq(1)
+      expect(@transaction[:data][:id]).to eq(13_168)
     end
   end
 end

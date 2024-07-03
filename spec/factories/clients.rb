@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :client, class: Deka::Client do
-    organization_uuid { ENV['ORGANIZATION_UUID'] }
-    personal_access_token { ENV['PERSONAL_ACCESS_TOKEN'] }
+    organization_uuid { ENV.fetch('ORGANIZATION_UUID', nil) }
+    personal_access_token { ENV.fetch('PERSONAL_ACCESS_TOKEN', nil) }
 
     initialize_with do
       new(

@@ -33,21 +33,14 @@ module Deka
     end
 
     def request(path, params = {})
-      res = connection.get do |req|
+      response = connection.get do |req|
         req.url format_request(path, params)
         req.headers['Content-Type'] = 'application/json'
         req.headers['Accept'] = 'application/json'
         req.options.timeout = 300 # 5 minutes
       end
 
-      unless res.status == 200
-        raise Deka::Exceptions::ResponseError,
-              "#{res.status} #{res.reason_phrase}"
-      end
-
-      results = JSON.parse(res.body, symbolize_names: true)
-      results[:headers] = res.headers
-      results
+      ResponseHandler.new(response).call
     end
 
     def format_request(path, params = {})
@@ -55,11 +48,10 @@ module Deka
     end
 
     def format_get_params(params = {})
-      return if params.blank?
+      return if params.empty?
 
-      arr = []
-      params.each do |k, v|
-        arr << "#{k}=#{v}"
+      arr = params.map do |k, v|
+        "#{k}=#{v}"
       end
       arr.join('&')
     end

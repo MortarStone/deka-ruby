@@ -12,9 +12,9 @@ require 'dotenv'
 Dotenv.load('../.env')
 
 @client = Deka::Client.new(
-  personal_access_token: ENV['PERSONAL_ACCESS_TOKEN'],
-  organization_uuid: ENV['ORGANIZATION_UUID'],
-  environment: ENV['ENVIRONMENT']
+  personal_access_token: ENV.fetch('PERSONAL_ACCESS_TOKEN', nil),
+  organization_uuid: ENV.fetch('ORGANIZATION_UUID', nil),
+  environment: ENV.fetch('ENVIRONMENT', nil)
 )
 
 def print_no_access_message
