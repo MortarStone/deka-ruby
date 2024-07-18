@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.2.0
+      - Faraday v2.10.0
       Content-Type:
       - application/json
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       message: Not Found
     headers:
       date:
-      - Wed, 03 Jul 2024 17:51:49 GMT
+      - Thu, 18 Jul 2024 15:45:13 GMT
       content-type:
       - text/html; charset=utf-8
       content-length:
@@ -34,5 +34,5 @@ http_interactions:
       encoding: UTF-8
       string: "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404
         Not Found</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
-  recorded_at: Wed, 03 Jul 2024 17:51:49 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Thu, 18 Jul 2024 15:45:13 GMT
+recorded_with: VCR 6.2.0

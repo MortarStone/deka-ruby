@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.2.0
+      - Faraday v2.10.0
       Content-Type:
       - application/json
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Wed, 03 Jul 2024 17:51:50 GMT
+      - Thu, 18 Jul 2024 15:45:14 GMT
       content-type:
       - application/json
       transfer-encoding:
@@ -37,7 +37,7 @@ http_interactions:
       x-ratelimit-limit:
       - '60'
       x-ratelimit-remaining:
-      - '52'
+      - '54'
       x-frame-options:
       - SAMEORIGIN
       x-xss-protection:
@@ -54,5 +54,5 @@ http_interactions:
         Trip- Honduras","gl_code":null,"organization_id":118,"active":true,"deleted_at":null,"created_at":"2024-03-20T18:34:54.000000Z","updated_at":"2024-03-20T18:34:54.000000Z","deductible":"yes","hide":true,"no_recurring":true,"sms_default":false,"order":null,"pco_fund_id":null},{"id":161,"name":"Missions","gl_code":null,"organization_id":118,"active":true,"deleted_at":null,"created_at":"2024-04-17T18:58:52.000000Z","updated_at":"2024-04-17T18:58:52.000000Z","deductible":"yes","hide":true,"no_recurring":true,"sms_default":false,"order":null,"pco_fund_id":null}],"links":{"first":"https:\/\/api.deka.solutions\/v1\/organizations\/463b4a90-7cb4-4b79-a602-4aabba4a3556\/purposes?page%5Bsize%5D=10&page%5Bnumber%5D=1","last":"https:\/\/api.deka.solutions\/v1\/organizations\/463b4a90-7cb4-4b79-a602-4aabba4a3556\/purposes?page%5Bsize%5D=10&page%5Bnumber%5D=1","prev":null,"next":null},"meta":{"current_page":1,"from":1,"last_page":1,"links":[{"url":null,"label":"&laquo;
         Previous","active":false},{"url":"https:\/\/api.deka.solutions\/v1\/organizations\/463b4a90-7cb4-4b79-a602-4aabba4a3556\/purposes?page%5Bsize%5D=10&page%5Bnumber%5D=1","label":"1","active":true},{"url":null,"label":"Next
         &raquo;","active":false}],"path":"https:\/\/api.deka.solutions\/v1\/organizations\/463b4a90-7cb4-4b79-a602-4aabba4a3556\/purposes","per_page":10,"to":9,"total":9}}'
-  recorded_at: Wed, 03 Jul 2024 17:51:50 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Thu, 18 Jul 2024 15:45:14 GMT
+recorded_with: VCR 6.2.0

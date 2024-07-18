@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.deka.solutions/v1/organizations/463b4a90-7cb4-4b79-a602-4aabba4a3556/users/1520?params=%7B%7D
+    uri: https://api.deka.solutions/v1/organizations/463b4a90-7cb4-4b79-a602-4aabba4a3556/users/1520
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.2.0
+      - Faraday v2.10.0
       Content-Type:
       - application/json
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Wed, 03 Jul 2024 17:51:52 GMT
+      - Thu, 18 Jul 2024 15:45:15 GMT
       content-type:
       - application/json
       transfer-encoding:
@@ -37,7 +37,7 @@ http_interactions:
       x-ratelimit-limit:
       - '60'
       x-ratelimit-remaining:
-      - '46'
+      - '48'
       x-frame-options:
       - SAMEORIGIN
       x-xss-protection:
@@ -49,5 +49,5 @@ http_interactions:
       string: '{"data":{"id":1520,"family_id":null,"family_role":null,"first_name":"Alison","last_name":"Kravetz","name":"Alison
         Kravetz","email":"alison.kravetz@jhilburnpartner.com","address":"22602 Cherokee
         Drive","address2":null,"city":"Bullard","state_province":"TX","postal":"75757","cell_phone":null,"pco_person_id":null,"reports_to_id":null,"created_at":"2023-06-04T13:33:50.000000Z","updated_at":"2024-01-17T22:09:39.000000Z","deleted_at":null}}'
-  recorded_at: Wed, 03 Jul 2024 17:51:51 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Thu, 18 Jul 2024 15:45:15 GMT
+recorded_with: VCR 6.2.0

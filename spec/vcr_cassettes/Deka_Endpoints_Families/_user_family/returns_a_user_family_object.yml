@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.2.0
+      - Faraday v2.10.0
       Content-Type:
       - application/json
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Wed, 03 Jul 2024 17:51:49 GMT
+      - Thu, 18 Jul 2024 15:45:13 GMT
       content-type:
       - application/json
       transfer-encoding:
@@ -37,7 +37,7 @@ http_interactions:
       x-ratelimit-limit:
       - '60'
       x-ratelimit-remaining:
-      - '55'
+      - '57'
       x-frame-options:
       - SAMEORIGIN
       x-xss-protection:
@@ -48,5 +48,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"data":{"id":610,"pco_family_id":null,"ccb_family_id":null,"chms_family_id":null,"name":"Lack
         Household","created_at":"2022-01-25T18:13:16.000000Z","updated_at":"2022-01-25T18:13:16.000000Z","deleted_at":null}}'
-  recorded_at: Wed, 03 Jul 2024 17:51:49 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Thu, 18 Jul 2024 15:45:13 GMT
+recorded_with: VCR 6.2.0

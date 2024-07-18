@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v2.2.0
+      - Faraday v2.10.0
       Content-Type:
       - application/json
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       date:
-      - Wed, 03 Jul 2024 17:51:51 GMT
+      - Thu, 18 Jul 2024 15:45:15 GMT
       content-type:
       - application/json
       transfer-encoding:
@@ -37,7 +37,7 @@ http_interactions:
       x-ratelimit-limit:
       - '60'
       x-ratelimit-remaining:
-      - '49'
+      - '51'
       x-frame-options:
       - SAMEORIGIN
       x-xss-protection:
@@ -47,5 +47,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"data":{"id":13168,"type":"contribution","deductible":"yes","giving_org_name":null,"code":null,"payment_type":"mastercard","purpose_id":128,"status":"declined","amount":122,"user_id":1450,"processed":null,"posted":null,"organization_id":118,"deposit_id":3346,"returned_transaction_id":null,"fees":{"base":{"per_transaction":0.3,"percent":0.022},"americanexpress":{"per_transaction":0.3,"percent":0.035},"ach":{"per_transaction":0.25,"percent":0}},"reference_id":null,"subscription_id":null,"description":null,"payment_method":"XXXX6253","reconciled":null,"date":null,"source":"web","contribution_date":"2023-02-02T11:32:41.000000Z","contribution_note":null,"sms_session_id":null,"campus_id":null,"payment_method_id":null,"subscription_db_id":null,"created_at":"2023-02-02T11:32:41.000000Z","updated_at":"2023-02-03T00:00:04.000000Z"}}'
-  recorded_at: Wed, 03 Jul 2024 17:51:51 GMT
-recorded_with: VCR 6.0.0
+  recorded_at: Thu, 18 Jul 2024 15:45:15 GMT
+recorded_with: VCR 6.2.0
