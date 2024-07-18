@@ -34,26 +34,14 @@ module Deka
 
     def request(path, params = {})
       response = connection.get do |req|
-        req.url format_request(path, params)
+        req.url "/v1/#{path}"
+        req.params = params
         req.headers['Content-Type'] = 'application/json'
         req.headers['Accept'] = 'application/json'
         req.options.timeout = 300 # 5 minutes
       end
 
       ResponseHandler.new(response).call
-    end
-
-    def format_request(path, params = {})
-      "/v1/#{path}?#{format_get_params(params)}"
-    end
-
-    def format_get_params(params = {})
-      return if params.empty?
-
-      arr = params.map do |k, v|
-        "#{k}=#{v}"
-      end
-      arr.join('&')
     end
   end
 end
