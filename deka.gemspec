@@ -31,6 +31,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'activesupport'
   spec.add_dependency 'dotenv'
-  spec.add_dependency 'faraday', '>= 1.0'
+  spec.add_dependency 'faraday', '>= 1.0', '< 2.0'
   spec.metadata['rubygems_mfa_required'] = 'true'
 end
