@@ -30,6 +30,8 @@ module Deka
         raise Deka::Exceptions::NotFoundError, error_message
       when 500
         raise Deka::Exceptions::ResponseError, error_message
+      else
+        raise Deka::Exceptions::DStandardError, error_message
       end
     end
 
