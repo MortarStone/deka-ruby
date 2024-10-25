@@ -6,6 +6,9 @@ module Deka
     class UnableToConnectError < DStandardError
     end
 
+    class UnauthorizedError < DStandardError
+    end
+
     class UnknownConnectingError < DStandardError
     end
 
