@@ -2,47 +2,39 @@
 
 module Deka
   class ResponseHandler
-    attr_accessor :response
+    attr_accessor :http_response
 
-    def initialize(response)
-      @response = response
+    def initialize(http_response)
+      @http_response = http_response
     end
 
     def call
       handle_response
     end
 
+    def response
+      @response ||= Response.from_http_response(http_response)
+    end
+
     private
 
     def handle_response
-      case response.status
-      when 200..201
-        format_response
-      when 202..299
-        nil # nothing to do
+      case response.code
+      when 200..299
+        response
       when 400
-        raise Deka::Exceptions::BadRequestError, error_message
+        raise Deka::Exceptions::BadRequestError.new(response), response.error_message
       when 401
-        raise Deka::Exceptions::UnauthorizedError, error_message
+        raise Deka::Exceptions::UnauthorizedError.new(response), response.error_message
       when 403
-        raise Deka::Exceptions::ForbiddenError, error_message
+        raise Deka::Exceptions::ForbiddenError.new(response), response.error_message
       when 404
-        raise Deka::Exceptions::NotFoundError, error_message
+        raise Deka::Exceptions::NotFoundError.new(response), response.error_message
       when 500
-        raise Deka::Exceptions::ResponseError, error_message
+        raise Deka::Exceptions::ResponseError.new(response), response.error_message
       else
-        raise Deka::Exceptions::DStandardError, error_message
+        raise Deka::Exceptions::DStandardError.new(response), response.error_message
       end
-    end
-
-    def error_message
-      "#{response.status} #{response.reason_phrase}"
-    end
-
-    def format_response
-      results = JSON.parse(response.body, symbolize_names: true)
-      results[:headers] = response.headers
-      results
     end
   end
 end

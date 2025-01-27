@@ -1,4 +1,4 @@
 require_relative 'helper'
 
-organization = @client.organization
-print_organization(organization)
+response = @client.organization
+print_organization(response)

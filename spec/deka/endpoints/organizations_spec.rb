@@ -6,7 +6,7 @@ RSpec.describe Deka::Endpoints::Families do
 
     before do
       @client = FactoryBot.build(:client)
-      @organization = @client.organization
+      @organization = @client.organization.body
     end
 
     it 'returns a organization object' do

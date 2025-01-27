@@ -22,9 +22,9 @@ def print_no_access_message
 end
 
 def print_list(object_name, pk_id_name, response)
-  print_headers(response[:headers])
+  print_headers(response.headers)
 
-  list = response[:data]
+  list = response.body[:data]
   if list.nil? || list.empty?
     puts 'Nothing found'
   else
@@ -60,9 +60,9 @@ def print_row(index, item, column_headers)
 end
 
 def print_item(object_name, response)
-  print_headers(response[:headers])
+  print_headers(response.headers)
 
-  item = response[:data]
+  item = response.body[:data]
   puts
   if item.nil?
     puts "Item not found"
@@ -88,6 +88,9 @@ def print_duplicates(pk_id_name, list)
 end
 
 def print_headers(headers)
-  p headers
+  puts "Headers"
+  headers.each do |k, v|
+    puts "#{k}: #{v}"
+  end
   puts
 end

@@ -4,7 +4,7 @@ RSpec.describe Deka::Endpoints::Transactions do
   describe '#transactions', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @transactions = @client.transactions('page[size]': 10)
+      @transactions = @client.transactions('page[size]': 10).body
     end
 
     it 'returns an array' do
@@ -20,7 +20,7 @@ RSpec.describe Deka::Endpoints::Transactions do
   describe '#transaction', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @transaction = @client.transaction(13_168)
+      @transaction = @client.transaction(13_168).body
     end
 
     it 'returns a transaction object' do

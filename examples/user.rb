@@ -1,4 +1,4 @@
 require_relative 'helper'
 
-user = @client.user(1)
-print_user(user)
+response = @client.user(413)
+print_user(response)
