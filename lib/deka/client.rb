@@ -33,7 +33,7 @@ module Deka
     end
 
     def request(path, params = {})
-      response = connection.get do |req|
+      http_response = connection.get do |req|
         req.url "/v1/#{path}"
         req.params = params
         req.headers['Content-Type'] = 'application/json'
@@ -41,7 +41,7 @@ module Deka
         req.options.timeout = 300 # 5 minutes
       end
 
-      ResponseHandler.new(response).call
+      ResponseHandler.new(http_response).call
     end
   end
 end

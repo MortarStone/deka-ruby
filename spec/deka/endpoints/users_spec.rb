@@ -4,7 +4,7 @@ RSpec.describe Deka::Endpoints::Users do
   describe '#users', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @users = @client.users('page[size]': 10)
+      @users = @client.users('page[size]': 10).body
     end
 
     it 'returns an array' do
@@ -20,7 +20,7 @@ RSpec.describe Deka::Endpoints::Users do
   describe '#user', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @user = @client.user(1520)
+      @user = @client.user(1520).body
     end
 
     it 'returns a user object' do

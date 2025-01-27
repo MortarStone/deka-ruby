@@ -4,7 +4,7 @@ RSpec.describe Deka::Endpoints::Families do
   describe '#families', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @families = @client.families('page[size]': 10)
+      @families = @client.families('page[size]': 10).body
     end
 
     it 'returns an array' do
@@ -20,7 +20,7 @@ RSpec.describe Deka::Endpoints::Families do
   describe '#user_family', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @user_family = @client.user_family(613)
+      @user_family = @client.user_family(613).body
     end
 
     it 'returns a user_family object' do

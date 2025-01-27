@@ -1,4 +1,4 @@
 require_relative 'helper'
 
-family = @client.user_family(613)
-print_family(family)
+response = @client.user_family(613)
+print_family(response)

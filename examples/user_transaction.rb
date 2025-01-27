@@ -1,4 +1,4 @@
 require_relative 'helper'
 
-transaction = @client.user_transaction(1, 1)
-print_transaction(transaction)
+response = @client.user_transaction(413, 1_405)
+print_transaction(response)

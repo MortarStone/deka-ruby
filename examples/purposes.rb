@@ -1,4 +1,4 @@
 require_relative 'helper'
 
-purposes = @client.purposes
-print_purposes(purposes)
+response = @client.purposes
+print_purposes(response)

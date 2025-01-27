@@ -4,7 +4,7 @@ RSpec.describe Deka::Endpoints::Purposes do
   describe '#purposes', :vcr do
     before do
       @client = FactoryBot.build(:client)
-      @purposes = @client.purposes('page[size]': 10)
+      @purposes = @client.purposes('page[size]': 10).body
     end
 
     it 'returns an array' do
