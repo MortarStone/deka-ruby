@@ -24,7 +24,7 @@ end
 def print_list(object_name, pk_id_name, response)
   print_headers(response.headers)
 
-  list = response.body[:data]
+  list = response.body['data']
   if list.nil? || list.empty?
     puts 'Nothing found'
   else
@@ -62,7 +62,7 @@ end
 def print_item(object_name, response)
   print_headers(response.headers)
 
-  item = response.body[:data]
+  item = response.body['data']
   puts
   if item.nil?
     puts "Item not found"

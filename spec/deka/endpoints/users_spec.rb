@@ -8,12 +8,12 @@ RSpec.describe Deka::Endpoints::Users do
     end
 
     it 'returns an array' do
-      expect(@users[:data]).to be_an(Array)
+      expect(@users['data']).to be_an(Array)
     end
 
     it 'returns family objects' do
-      expect(@users[:data].first).to be_a(Hash)
-      expect(@users[:data].first[:id]).to_not be_nil
+      expect(@users['data'].first).to be_a(Hash)
+      expect(@users['data'].first['id']).to_not be_nil
     end
   end
 
@@ -24,8 +24,8 @@ RSpec.describe Deka::Endpoints::Users do
     end
 
     it 'returns a user object' do
-      expect(@user[:data]).to be_a(Hash)
-      expect(@user[:data][:id]).to eq(1520)
+      expect(@user['data']).to be_a(Hash)
+      expect(@user['data']['id']).to eq(1520)
     end
   end
 end

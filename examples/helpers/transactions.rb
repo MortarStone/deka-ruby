@@ -7,16 +7,16 @@ def print_transaction(item)
 end
 
 def transaction_columns
-  [
-    :id,
-    :payment_type,
-    :purpose_id,
-    :status,
-    :amount,
-    :user_id,
-    :date,
-    :created_at,
-    :updated_at,
-    :deleted_at
+  %w[
+    id
+    payment_type
+    purpose_id
+    status
+    amount
+    user_id
+    date
+    created_at
+    updated_at
+    deleted_at
   ]
 end

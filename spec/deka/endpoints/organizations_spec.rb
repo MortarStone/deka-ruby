@@ -10,8 +10,8 @@ RSpec.describe Deka::Endpoints::Families do
     end
 
     it 'returns a organization object' do
-      expect(@organization[:data]).to be_a(Hash)
-      expect(@organization[:data][:id]).to eq(118)
+      expect(@organization['data']).to be_a(Hash)
+      expect(@organization['data']['id']).to eq(118)
     end
   end
 end
