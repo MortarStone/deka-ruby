@@ -8,12 +8,12 @@ RSpec.describe Deka::Endpoints::Transactions do
     end
 
     it 'returns an array' do
-      expect(@transactions[:data]).to be_an(Array)
+      expect(@transactions['data']).to be_an(Array)
     end
 
     it 'returns family objects' do
-      expect(@transactions[:data].first).to be_a(Hash)
-      expect(@transactions[:data].first[:id]).to_not be_nil
+      expect(@transactions['data'].first).to be_a(Hash)
+      expect(@transactions['data'].first['id']).to_not be_nil
     end
   end
 
@@ -24,8 +24,8 @@ RSpec.describe Deka::Endpoints::Transactions do
     end
 
     it 'returns a transaction object' do
-      expect(@transaction[:data]).to be_a(Hash)
-      expect(@transaction[:data][:id]).to eq(13_168)
+      expect(@transaction['data']).to be_a(Hash)
+      expect(@transaction['data']['id']).to eq(13_168)
     end
   end
 end

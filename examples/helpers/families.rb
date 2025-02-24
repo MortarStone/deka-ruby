@@ -7,12 +7,12 @@ def print_family(item)
 end
 
 def family_columns
-  [
-    :id,
-    :name,
-    :primary_contact,
-    :created_at,
-    :updated_at,
-    :deleted_at
+  %w[
+    id
+    name
+    primary_contact
+    created_at
+    updated_at
+    deleted_at
   ]
 end

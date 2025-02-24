@@ -24,7 +24,7 @@ module Deka
     def self.parse_body(response_body)
       return if response_body.empty?
 
-      JSON.parse(response_body, symbolize_names: true) rescue response_body
+      JSON.parse(response_body) rescue response_body
     end
 
     def error_message

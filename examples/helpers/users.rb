@@ -7,13 +7,13 @@ def print_user(item)
 end
 
 def user_columns
-  [
-    :id,
-    :family_id,
-    :first_name,
-    :last_name,
-    :created_at,
-    :updated_at,
-    :deleted_at
+  %w[
+    id
+    family_id
+    first_name
+    last_name
+    created_at
+    updated_at
+    deleted_at
   ]
 end

@@ -8,12 +8,12 @@ RSpec.describe Deka::Endpoints::Purposes do
     end
 
     it 'returns an array' do
-      expect(@purposes[:data]).to be_an(Array)
+      expect(@purposes['data']).to be_an(Array)
     end
 
     it 'returns purpose objects' do
-      expect(@purposes[:data].first).to be_a(Hash)
-      expect(@purposes[:data].first[:id]).to_not be_nil
+      expect(@purposes['data'].first).to be_a(Hash)
+      expect(@purposes['data'].first['id']).to_not be_nil
     end
   end
 end
